@@ -1,3 +1,6 @@
+SPLIT_KEYBOARD = yes
+WPM_ENABLE = yes
+
 LTO_ENABLE = yes            # Link Time Optimization enabled
 BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = no        # Mouse keys
@@ -24,3 +27,5 @@ SRC +=  ./lib/rgb_state_reader.c \
         # ./lib/mode_icon_reader.c \
         # ./lib/host_led_state_reader.c \
         # ./lib/timelogger.c \
+		./modules/wpm_render/wpm_render.c \
+		#./modules/elapsed_time/elapsed_time.c \
