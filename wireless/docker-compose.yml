@@ -1,0 +1,22 @@
+services:
+  zmk:
+    image: zmkfirmware/zmk-build-arm:3.5-branch
+    command: ["/workspaces/scripts/build_keyboard.sh"]
+    volumes:
+      # Data that is permanent
+      - ./build_keyboard.sh:/workspaces/scripts/build_keyboard.sh:Z
+      - ./zmk-config:/workspaces/zmk-config:Z
+      - ./zmk-modules:/workspaces/zmk-modules:Z
+      - ./build_output:/workspaces/zmk/build_output:Z
+      # Data that get's deleted on first run
+      - ./storage/zmk:/workspaces/zmk:Z
+      - ./storage/zephyr:/workspaces/zephyr:Z
+      - ./storage/west:/workspaces/west:Z
+      - ./storage/pip-cache:/root/.cache/pip:Z
+    working_dir: /workspaces/zmk/app
+    environment:
+      - USER_ID=${UID:-1000}
+      - GROUP_ID=${GID:-1000}
+      - ZEPHYR_BASE=/workspaces/zmk/zephyr
+      - WEST_PYTHON=/usr/bin/python3
+    user: "${USER_ID}:${GROUP_ID}"
