@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |LShift|CapsLO|PriScr|Delete| Home |PageUp|-------.    .-------| Left | Down |  Up  | Right|      |      |
  * |------+------+------+------+------+------| MO(1) |    | MO(1)|------+------+------+------+------+------|
- * |LCtrl |ScrLoc| Pause|Insert| End  |PageDo|-------|    |-------|   Ü  |   Ö  |   Ä  |      |      |RShift|
+ * |LCtrl |ScrLoc| Pause|Insert| End  |PageDo|-------|    |-------|   Ä  |   Ö  |   Ü  |      |      |RShift|
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   | LGUI | LAlt | DEL  | / Space /       \Enter \  | BSPC | GAlt | MO(2)|
  *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_GRV, KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC,                       KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_NUBS,
             KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6,                               KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12,
             KC_LSFT, KC_CAPS, KC_PSCR, KC_DEL, KC_HOME, KC_PGUP,                    KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_NO, KC_NO,
-            KC_LCTL, KC_SCRL, KC_PAUS, KC_INS, KC_END, KC_PGDN, MO(1),             MO(1), KC_LBRC, KC_SCLN, KC_QUOT, KC_NO, KC_NO, KC_RSFT,
+            KC_LCTL, KC_SCRL, KC_PAUS, KC_INS, KC_END, KC_PGDN, MO(1),             MO(1), KC_QUOT, KC_SCLN, KC_LBRC, KC_NO, KC_NO, KC_RSFT,
                                             KC_LGUI, KC_LALT, KC_DEL, KC_SPC,    KC_ENT, KC_BSPC, KC_RALT, MO(2)),
 
 
