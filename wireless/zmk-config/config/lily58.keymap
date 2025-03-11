@@ -39,7 +39,7 @@
 
         fn_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // |   ^   |  !  |  "  |  §   |  $   |  %   |                   |  &   |   /   |   (   |  )   |   =   |   ?   |
+            // |   ^   |  !  |  "  |  §   |  $   |  %   |                   |  &   |   /   |   (   |  )   |   =   |  <>   |
             // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |   F8  |   F9  |  F10 |  F11  |  F12  |
             // | SHIFT | CAPS|PRSCN| DEL  | HOME | PUP  |                   |      |   <-  |   v   |  ^   |  ->   |       |
             // | CTRL  |SCLCK|PAUSE| INS  |  END | PDOWN|  MO(1) |  | MO(2) |  Ä   |   Ö   |   Ü   |      |       |       |
@@ -48,7 +48,7 @@
             display-name = "Fn";
 
             bindings = <
-&kp GRAVE           &kp EXCLAMATION     &kp DOUBLE_QUOTES   &kp DE_SECT     &kp DOLLAR      &kp PERCENT                                   &kp AMPERSAND   &kp SLASH             &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS   &kp EQUAL   &kp DE_ESZETT
+&kp GRAVE           &kp EXCLAMATION     &kp DOUBLE_QUOTES   &kp DE_SECT     &kp DOLLAR      &kp PERCENT                                   &kp AMPERSAND   &kp SLASH             &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS   &kp EQUAL   &kp DE_LESS_THAN
 &kp F1              &kp F2              &kp F3              &kp F4          &kp F5          &kp F6                                        &kp F7          &kp F8                &kp F9                  &kp F10                 &kp F11     &kp F12
 &kp LEFT_SHIFT      &kp CAPS            &kp PSCRN           &kp DELETE      &kp HOME        &kp PAGE_UP                                   &kp LEFT        &kp DOWN              &kp UP                  &kp RIGHT               &kp RIGHT   &none
 &kp LEFT_CONTROL    &kp SLCK            &kp PAUSE_BREAK     &kp INSERT      &kp END         &kp PAGE_DOWN       &mo 1           &mo 1     &kp DE_A_UMLAUT &kp DE_O_UMLAUT       &kp DE_U_UMLAUT         &none                   &none       &none
